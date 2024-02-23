@@ -1,0 +1,1 @@
+{"name":"Local: 25501","url":"c:\\Users\\slugg\\Documents\\GitHub\\Algo_DataStruct\\3.재귀\\25501.py","tests":[{"id":1708665600856,"input":"5\nAAA\nABBA\nABABA\nABCA\nPALINDROME","output":"1 2\n1 3\n1 3\n0 2\n0 1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\slugg\\Documents\\GitHub\\Algo_DataStruct\\3.재귀\\25501.py","group":"local","local":true}
