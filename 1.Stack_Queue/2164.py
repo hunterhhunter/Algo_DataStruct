@@ -14,4 +14,4 @@ while True:
         cards.append(cards[cnt])
         cnt += 1
 
-print(cards[-1])
+print()
