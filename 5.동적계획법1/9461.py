@@ -11,4 +11,3 @@ for j in range(5, 101):
 for _ in range(a):
     inp = int(input())
     print(n[inp])
-
