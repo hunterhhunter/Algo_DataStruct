@@ -12,6 +12,7 @@ tmplst = [0 for _ in range(len(lst))]
 tmplst[1]= lst[1]
 lower.append(lst[1])
 upper.append(lst[1])
+
 for i in range(2, n+1):
     low = lst[i] + tmplst[i-2]
     up = lst[i] + lower[i-1]
