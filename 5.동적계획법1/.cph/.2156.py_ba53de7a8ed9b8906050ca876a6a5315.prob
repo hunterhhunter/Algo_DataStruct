@@ -1,0 +1,1 @@
+{"name":"Local: 2156","url":"c:\\Users\\slugg\\Documents\\GitHub\\Algo_DataStruct\\5.동적계획법1\\2156.py","tests":[{"id":1715162146272,"input":"5\n0\n1000\n1000\n1000\n0","output":"2000"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\slugg\\Documents\\GitHub\\Algo_DataStruct\\5.동적계획법1\\2156.py","group":"local","local":true}
