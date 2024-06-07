@@ -14,4 +14,4 @@ for i in range(1, n):
         if lst[j][1] < lst[i][1]:
             table[i] = max(table[i], table[j]+1)
 
-print(n-max(table))
+print(n-max(table)) 
