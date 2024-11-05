@@ -10,6 +10,16 @@ def all_small_combination(arr: list):
         small_combinations = itertools.combinations(arr, i)
         result.extend(small_combinations)
     return result
+
+def all_small_combination2(arr: list):
+    lst = []
+    for mask in range(1, 1 << len(arr)):
+        tmp = []
+        for i in range(len(arr)):
+            if mask & (1<<i):
+                tmp.append(arr[i])
+        lst.append(tmp)
+    return lst
         
 
 inp = input()
@@ -26,7 +36,7 @@ for i in range(len(inp)):
         marking.append((tmp, i))
 
 # 부분집합 만들기
-comb = all_small_combination(marking)
+comb = all_small_combination2(marking)
 
 # 출력하기
 for i in comb:
