@@ -9,21 +9,29 @@ int main() {
 
     int ans = 0, star = 0;
 
-    for (int i=0; i<inp.length(); i++) {
+    for (int i=0; i<12; i++) {
         if (inp[i] == '*') {
-            if (i % 2 == 0) {
+            if (i % 2 == 1) {
                 star = 3;
             } else {
                 star = 1;
             }
         } else {
             if (i % 2 == 0) {
-                ans += ((int)inp[i]-48) % 10;
+                ans += (int)(inp[i]-'0');
             } else {
-                ans += (((int)inp[i]-48) * 3)%10;
+                ans += ((int)(inp[i]-'0') * 3);
             }
         }
     }
+    int m = (int)(inp[inp.length()-1]-'0');
 
-    cout << 10 - (ans % 10) - (int)inp[inp.length()-1];
+    for (int i=0; i<10; i++) {
+        if (m == (10 - ((ans+i*star)%10))%10) {
+            cout << i;
+            break;
+        }
+    }
+
+    return 0;
 }
