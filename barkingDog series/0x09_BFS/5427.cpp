@@ -85,6 +85,7 @@ int main() {
                 if (map[ny][nx] == '#') {continue;}
                 if (visit2[ny][nx] != 0) {continue;}
                 // 상근이는 불이 붙으려는 or 붙은 칸 이동 X
+                // 근데 불이 닿을 수 없는 곳은 이동 가능한 예외처리 해줘야함.
                 if (visit1[ny][nx] != 0 && visit1[ny][nx] <= visit2[cur.first][cur.second]+1) {
                     continue;
                 }
